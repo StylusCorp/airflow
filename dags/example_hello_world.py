@@ -24,6 +24,7 @@ dag = DAG(
 def print_context(ds, **kwargs):
     pprint(kwargs)
     print(ds)
+    print('Hello World')
     return 'Whatever you return gets printed in the logs'
 
 
