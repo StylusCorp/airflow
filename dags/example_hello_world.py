@@ -24,7 +24,6 @@ dag = DAG(
 def print_context(ds, **kwargs):
     pprint(kwargs)
     print(ds)
-    print('Hello World')
     return 'Whatever you return gets printed in the logs'
 
 
@@ -40,6 +39,7 @@ run_this = PythonOperator(
 # [START howto_operator_python_kwargs]
 def my_sleeping_function(random_base):
     """This is a function that will run within the DAG execution"""
+    print('Hello World....')
     time.sleep(random_base)
 
 
